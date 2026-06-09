@@ -9,7 +9,7 @@ import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const url = process.argv[2] ?? "https://fondue-menu.vercel.app/#menu";
+const url = process.argv[2] ?? "https://fondue-gamma.vercel.app/#menu";
 const out = join(__dirname, "..", "public", "qr.png");
 
 await QRCode.toFile(out, url, {
